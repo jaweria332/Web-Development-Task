@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Facebook</title>
+  <style>
+    #top ul h1{
+  padding-right:100px;
+  padding-left: 100px;
+  margin-top: 20px;
+  font-size: 50px;
+  font-family: Segoe UI;
+}
+#top ul {
+  list-style: none;
+  display: flex;
+  padding-left: 0px;
+  background-color: darkblue;
+  color: white;
+  height: 100px;
+  width:auto;
+  font-family: Helvetica;
+}
+#before p {
+  text-align: center;
+  font-size: 20px
+}
+#create-account {
+  text-align: center
+}
+#name ul {
+  list-style: none;
+}
+#name ul input[type = text] {
+  width: 35%;
+  border: 2px solid #aaa;
+  border-radius: 3px;
+  margin: 5px 0;
+  outline: none;
+  padding: 4px;
+  box-sizing: border-box;
+  transition: 2s;
+}
+#birthday ul {
+    list-style: none;  
+}
+#top button {
+  background-color: cornflowerblue;
+  color: antiquewhite;
+  border: black;
+  text-align: center;
+}
+#signup button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#signup {
+     text-align: center;
+footer {
+      text-align: center;
+}
+footer ul {
+      list-style:none;
+      display: none;
+}
+    main a p{
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <!-- Start of header including login option-->
+    
+    
+    <section id="top">
+   
+     <ul>
+      <li><h1>Facebook</h1></li>
+      <form id="login">
+        <li><label for="email">Email or Phone number</label><br></li>
+        <input type="text" id="email" name="email"<br>
+        <li><label for="password">Password</label><br></li>
+        <input type="text" id="password" name="password"<br>
+        <button type="button">Login</button>
+      </form>
+    </ul>
+    </section>
+    
+   
+  </header>
+  
+  
+  <!--End of header-->
+  
+  <!--Start of main body-->
+  <main>
+    <section id="before">
+      
+      <p><b>Facebook helps you connect and share with the people in your life.</b></p>
+    
+    </section>
+    
+    
+      <!--Start of create acound option-->
+    
+    
+    <section id="create-account">
+      <h2><b>Create an account</b></h2>
+      <p>It's quick and easy to connect with the people around the world.</p>
+      
+      <!--Input first and last name-->
+      <section id="name">
+      <ul>
+        <li><input type="text" id="fname" name="fname" placeholder="First name"><br></li>
+        <li><input type="text" id="lname" name="lname" placeholder="Last name"><br></li>
+        <li><input type="text" id="email" name="email" placeholder="Mobile number or email"><br></li>
+      </ul>
+      
+      </section>
+     <br>
+      <section id="birthday">
+      <!--input birthday of user separately for month,year and date-->
+
+      <tr>
+        <td>Date of Birth</td>
+        <td>
+          <form>
+            <select date="date" form="myform">
+              <option value="none">1</option>
+              <option value="none">2</option>
+              <option value="none">3</option>
+              <option value="none">4</option>
+              <option value="none">5</option>
+              <option value="none">6</option>
+              <option value="none">7</option>
+              <option value="none">8</option>
+              <option value="none">9</option>
+              <option value="none">10</option>
+              <option value="none">11</option>
+              <option value="none">12</option>
+              <option value="none">13</option>
+              <option value="none">14</option>
+              <option value="none">15</option>
+              <option value="none">16</option>
+              <option value="none">17</option>
+              <option value="none">18</option>
+              <option value="none">19</option>
+              <option value="none">20</option>
+              <option value="none">21</option>
+              <option value="none">22</option>
+              <option value="none">23</option>
+              <option value="none">24</option>
+              <option value="none">25</option>
+              <option value="none">26</option>
+              <option value="none">27</option>
+              <option value="none">28</option>
+              <option value="none">29</option>
+              <option value="none">30</option>
+              <option value="none">31</option> 
+            </select>
+            <select month="month" form="myform">
+              <option value="none">Jan</option>
+              <option value="none">Feb</option>
+              <option value="none">March</option>
+              <option value="none">April</option>
+             <option value="none">May</option>
+            <option value="none">June</option>
+           <option value="none">July</option>
+           <option value="none">August</option>
+           <option value="none">Sep</option>
+           <option value="none">Oct</option>
+           <option value="none">Nov</option>
+           <option value="none">Dec</option>
+             </select>
+             <select year="year" form="myform">
+              <option value="none">2009</option>
+              <option value="none">2008</option>
+              <option value="none">2007</option>
+              <option value="none">2006</option>
+              <option value="none">2005</option>
+              <option value="none">2004</option>
+              <option value="none">2003</option>
+              <option value="none">2002</option>
+              <option value="none">2001</option>
+              <option value="none">2000</option>
+              <option value="none">1999</option>
+              <option value="none">1998</option>
+              <option value="none">1997</option>
+              <option value="none">1996</option>
+              <option value="none">1995</option>
+              <option value="none">1994</option>
+              <option value="none">1993</option>
+              <option value="none">1992</option>
+              <option value="none">1991</option>
+              <option value="none">1990</option>
+              <option value="none">1989</option>
+              <option value="none">1988</option>
+              <option value="none">1986</option>
+              <option value="none">1985</option>
+              <option value="none">1984</option>
+              <option value="none">1983</option>
+              <option value="none">1982</option>
+              <option value="none">1981</option>
+              <option value="none">1980</option>
+              <option value="none">1979</option>
+            </select>  
+        </td>
+      </tr>
+    </form>
+      <br>
+      <br></section>
+      <!--Input of gender of user-->
+<section id = "Gender"></section>
+ <form>
+    <tr>
+      <td>Gender : <br></td>
+      <td>
+        <label><input type="radio" name="gender" value="male">Male<br></label>
+        <label><input type="radio" name="gender" value="female">Female<br></label>
+        <label><input type="radio" name="gender" value="custom">Other<br></label>
+      </td>
+    </tr>
+    </form>
+  </section>
+    <br>
+    <!--section for signup button-->
+    
+    <section id="signup">
+    <button type="button">Sign up</button>
+    <p>By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may receive SMS notifications from us and can opt out at any time.</p>
+    </section>
+    <a href="#">Create a page</a> for celebrity band or business</p>
+   
+  </main>
+  <!--End of main body-->
+  
+  <!--Start of footer-->
+  <footer>
+    <ul>
+      <li><a href="#"> English (UK) </a></li>
+      <li><a href="#"> اردو </a></li>
+      <li><a href="#"> پشتو </a></li>
+      <li><a href="#"> العربية </a></li>
+      <li><a href="#"> हिंदी </a></li>
+      <li><a href="#"> বাংলা </a></li>
+      <li><a href="#"> ਪੰਜਾਬੀ </a></li>
+      <li><a href="#"> فارسی </a></li>
+      <li><a href="#"> ગુજરાતી </a></li>
+      <li><a href="#"> Deutsch </a></li>
+      <li><a href="#"> Espanol </a></li>
+      <li><button type="button">+</button></li>
+    </ul>
+    <hr>
+    
+    <p>Facebook © 2020</p>
+    <!--End of footer-->
+  </footer>
+</body>
+</html>
