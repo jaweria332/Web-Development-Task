@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Student Registration Form</Form></title>
+        <style>
+            main {
+                text-align: center;
+                font-size: 18px;
+            }
+            #Header h1{
+                color: purple;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 70px;
+                background-color: lightgray;
+            }
+            #body p input:focus {
+                box-shadow: 0 0 3px rgba(0,0,255,0.5);
+                border: 1px solid rgb(0,0,255);
+            }
+        </style>
+    </head>
+    <main>
+    <section id="Header">
+        <h1><b>Student Registration</b></h1>
+        <p>Kindly submit the required information to proceed further.</p>
+    </section>
+    <section id="body">
+        <br>
+        <p>Full Name : <input type="text" name="fullname" placeholder="Enter Full Name"></p>
+        <p>Father Name : <input type="text" name="fathername" placeholder="Enter Father Name"></p>
+        <p>Email Adress : <input type="text" name="email" placeholder="Enter Email Adress"></p>
+        <p>Gender : <br><label><input type="radio" name="gender" value="male">Male<br></label>
+            <label><input type="radio" name="gender" value="female">Female<br></label>
+            <label><input type="radio" name="gender" value="custom">Other<br></label></p>
+        <p>CNIC : <input type="number" name="cnic" placeholder="Enter Your CNIC"></p>
+        <p>Qualification : <select name="Qualification">
+            <option value="none">None</option>
+            <option value="matric">Matriculation</option>
+            <option value="inter">Intermediate</option>
+            <option value="grad">Graduation</option>
+            <option value="Master">Master</option>
+            <option value="Other">Others</option>
+        </select></p>
+        <p>Current Role : <select name="role">
+            <option value="none">None</option>
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="worker">Worker</option>
+            <option value="businessman">Business man/woman</option>
+            <option value="Other">Others</option>
+        </select></p>
+        <p>Field of interest : <select name="interest">
+            <option value="none">None</option>
+            <option value="Data Science">Data Science</option>
+            <option value="Artificial intelligence">Artificial Intelligence</option>
+            <option value="ml">Machine Learning</option>
+            <option value="dl">Deep Learning</option>
+            <option value="cv">Computer Vision</option>
+            <option value="Webdev">Web Development</option>
+            <option value="BigData">Big Data</option>
+            <option value="Web Designer">Web Designing</option>
+            <option value="programmer">Programming</option>
+            <option value="others">Others</option>
+        </select></p>
+        <p>Mobile No. : <input type="number" value="mobile" placeholder="Enter your mobile no."></p>
+            
+    </section>
+    <section id="footer">
+        <p>If you meet the admission criteria, You will soon recieve a confirmation email on your provided email address</p>
+        <hr>
+        <p>XYZ Institute(Name of Technology)</p>
+    </section>
+</main>
+</html>
