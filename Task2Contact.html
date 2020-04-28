@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		html{
+                height: 100%;
+                padding:0;
+                margin:0;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-color: rgb(255, 255, 255);
+            }
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .navbar {
+                height: 80px;
+                width: 100%;
+                background-color: black;
+            }
+            .name{
+                padding-left: 40px;
+                padding-right: 40px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                color: white;
+                float: left;
+                margin-left: 50px;
+                font-size: xx-large;
+            }
+            .navbar ul {
+                float:right;
+                margin-right: 20px;
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 20px;
+                line-height: 80px;
+                text-align: center;
+            }
+            .navbar ul li a{
+                color:white;
+                text-decoration: none;
+                text-align: center;
+            }
+            .navbar ul li a:hover{
+                color: orange;
+            }
+		.middle{
+			margin: 20px;
+			margin-left: 25%;
+		}
+		.middle h2{
+			color: rgb(238, 147, 68);
+			font-size: 48px;
+		}
+		input{
+		  width: 65%;
+		  padding: 12px 20px;
+		  margin: 8px 0;
+		  display: inline-block;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  box-sizing: border-box;
+		}
+		.middle button  {
+			background: rgb(29, 26, 26);
+			padding: 10px;
+			border-radius: 5px;
+			color: white;
+		}
+		.subFooter{
+			float: left;
+			width: 29.33%;
+            height: 80px;
+			padding: 2%;
+			background: black;
+			margin: 0%;
+		}
+		.subFooter h3, .subFooter p{
+			color: white;
+			text-align: center;
+		}	
+		.subFooter .loc{
+			margin-right: 8px;
+		}
+        .middle textarea {
+                width: 30%;
+                resize: vertical;
+                max-height: 200px;
+                min-height: 50px;
+                
+            }
+            .middle input,textarea{
+                outline: none;
+                border: 1px solid #ddd;
+            }
+            .middle input:focus, textarea:focus {
+                box-shadow: 0 0 4px rgba(207, 50, 50 0.5);
+                border: 1px solid  rgb(207, 50, 50);
+            }
+	</style>
+</head>
+<body>
+    <div class="top">
+        <nav class="navbar">
+            <h1 class="name">HBT</h1>
+            <ul>
+                <li><a href="Task2Home.html"">Home</a></li>
+                <li><a href="Task2About.html"">About</a></li>
+                <li><a href="Task2Contact.html"">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+	<div class="middle">
+		<h2>ContactUs</h2>
+		<p>Please fill out the form below to contact us</p>
+		<br>
+        <br>
+        <br><br>
+		<form>
+            <p>Full Name : </p>
+            <input type="text" name="fullname">
+            <br>
+            <br>
+			<p>Email Address : </p>
+            <input type="text" id="email" name="email">
+            <br>
+            <br>
+            <textarea rows="5" cols="30" wrap="physical"></textarea>
+            <br>
+            <button type="submit">Submit</button>
+            <br>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="subFooter">
+			<h3><i class="loc"></i>Location</h3>
+			<p>XYZ Street, ABC Road, Virtual World</p>
+		</div>
+		<div class="subFooter">
+			<h3><i class="Ph" ></i>Phone No</h3>
+			<p>021-12345678910</p>
+		</div>
+		<div class="subFooter">
+			<h3><i class="mail"></i>Email Address</h3>
+			<p>hiyamughal03@gmail.com</p>
+		</div>
+	</div>
+</body>
+</html>
