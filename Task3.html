@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Headlines</title>
+        <style>
+           html{
+                background-image: url('white background.jpg');
+                padding:0;
+                margin:0;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            .navbar {
+                height: 80px;
+                width: 100%;
+            }
+            .logo{
+                padding-left: 10px;
+                padding-right: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color:rgb(133, 87, 35);
+                float: left;
+                margin-left: 50px;
+                font-size: x-large;
+                font-family: Arial;
+            }
+            .navbar ul {
+                float:right;
+                margin-right: 10px;
+            }
+            .navbar ul li{
+                list-style: none;
+                display: inline-block;
+                margin: 0 10px;
+                color:rgb(133, 87, 35);
+                line-height: 80px;
+                text-align: center;
+                font-family: Arial;
+            }
+            .navbar ul li a{
+                color:rgb(24, 24, 221);
+                text-decoration: none;
+                text-align: center;
+            }
+            .navbar ul li a:hover{
+                color:rgb(223, 168, 106);
+            }
+
+            .TabButton {
+                padding-top:10px;
+                padding-bottom: 10px;
+                padding-right: 30px;
+                padding-left: 30px;
+                text-align: center;
+                color:rgb(133, 87, 35);
+                background-color: transparent;
+                border: 1px solid rgb(133, 87, 35);
+            }
+
+            .header {
+                text-align: center;
+                font-family: Arial;
+            }
+            .TopHeader {
+                font-size: 58px;
+                font-family: Arial;
+                padding: 10px;
+                margin:20px;
+                color:rgb(133, 87, 35);
+            }
+            .TopPara {
+                font-size: 18px;
+                font-family: Arial;
+                color:rgb(133, 87, 35);
+                padding: 10px;
+                margin:20px;
+            }
+            .TopButton {
+                padding:10px;
+                text-align: center;
+                width: 20%;
+                color:rgb(133, 87, 35);
+                background: transparent;
+                border: 1px solid rgb(133, 87, 35);
+            }
+            .imageMid {
+                margin-top: 30px;
+                width:45%;
+                height:300px;
+                margin-right: 27%;
+                margin-left: 27%;
+                border: 4px solid rgb(133, 87, 35);
+                background-image: url('newspaper.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .feature {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+            .listitem {
+                width: 33.33%;
+            }
+            .navbar2 {
+                width: 100%;
+            }
+            .navbar2 .feature li {
+                list-style: none;
+                padding:50px;
+                width: 250px;
+            }
+            .listitem .fa{
+                margin-right: 20px;
+                float: left;
+            }
+            .fa:after {
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .features .navbar2 .feature .listitem h4 {
+                display: block;
+                font-size: 20px;
+                font-family: Arial;
+                padding-bottom: 10px;
+                padding-left: 10px;
+               margin-left: 10px;
+            }
+            .headf {
+                width: 100%;
+                text-align: center;
+                padding-top: 20px;
+                margin-top: 20px;
+                font-size: 50px;
+                font-family: Arial;
+                font-weight: bold;
+                color:rgb(133, 87, 35);
+            }
+            .midheader h1{
+                padding: 20px;
+                margin:20px;
+                font-size: 48px;
+                font-family: Arial;
+                text-align: center;
+            }
+            .para p{
+                
+                padding-left: 10px;
+                margin-left: 80px;
+                font-size: 14px;
+                font-family: Arial;
+                line-height: 25px;
+            }
+            .box{
+                margin: 20px;
+                width: 300px;
+                height: 400px;
+                background-image: url('work.jpg');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                float: right;
+            }
+            .midbutton {
+                margin-left: 90px;
+                padding-top:10px;
+                padding-bottom: 10px;
+                padding-right: 30px;
+                padding-left: 30px;
+                text-align: center;
+                color: black;
+                background-color: transparent;
+                border: 1px solid black;
+            }
+            .midsection {
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: left;
+                border: 5px solid rgb(133, 87, 35);
+                background-image: linear-gradient(to left, rgb(133, 87, 35),rgb(231, 178, 2), #FFE3B3);
+                height: 450px;
+            }
+            .review {
+                text-align: center;
+                padding-left: 20px;
+                padding-right: 20px;
+                margin-left: 80px;
+                margin-right: 80px;
+            }
+            .review h1{
+                padding: 10px;
+                margin:20px;
+                font-size: 50px;
+                font-family: Arial;
+                font-weight: bold;
+                color:rgb(133, 87, 35);
+
+            }
+            .review p{
+                font-family: Arial;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            .review hr{
+                margin-left: 500px;
+                margin-right: 500px;
+            }
+            .userreview{
+                display: flex;
+                justify-content: center;
+            }
+            .contact{
+                text-align: center;
+                padding: 50px;
+                margin: 50px;
+                background-image: url('contact background.jpg');
+            }
+            .boxL {
+            width: 120px;
+            height: 60px;
+            padding: 10px;
+            border: transparent;
+            background-image: url('bottom.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            }
+            .logos {
+                margin-top: 100px;
+                margin-left: 50px;
+                margin-right: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .contact h3{
+                font-family: Arial;
+                font-size: 46px;
+                font-family: sans-serif;
+                color:white;
+                padding: 10px;
+                margin: 20px;
+            }
+            .contact p{
+                font-size: 18px;
+                line-height: 15px;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+                color:white;
+                font-family: Arial;
+            }
+            .signup input{
+                width:30%;
+                height:35px;
+                text-align: left;
+                padding-left: 10px;
+            }
+            .signup button {
+                padding-top:10px;
+                    padding-bottom: 10px;
+                    padding-right: 30px;
+                    margin-left: 20px;
+                    padding-left: 20px;
+                    text-align: center;
+                    color:white;
+                    background-color: transparent;
+                    border: 1px solid white;
+            }
+            .headerul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .bottomwrapper{
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            .bottomwrapper ul {
+                list-style: none;
+            }
+            .ListHeader {
+                font-size: x-large;
+                padding: 30px;
+                margin-bottom: 100px;
+                color:rgb(133, 87, 35);
+                font-family: Arial;
+            }
+            .internal {
+                font-size: 18px;
+                font-family: Arial;
+                padding-top: 10px;
+                margin-top: 10px;
+            }
+            .heading {
+                font-weight: 500;
+                font-family: Arial;
+            }
+            .johndoe {
+                font-family: Arial;
+                color: rgb(133, 87, 35);
+            }
+            .johndoe .name{
+                font-size: 40px;
+            }
+            .johndoe .ceo{
+                font-size: 30px;
+            }
+        
+        </style>
+    </head>
+    <body>
+        <div class="top">
+            <nav class="navbar">
+                <h3 class="logo">COMPANY'S LOGO</h3>
+                <ul class="HomeTabs">
+                    <li><a="#">PLATFORM</a></li>
+                    <li><a="#">ABOUT</a></li>
+                    <li><button class="TabButton" type="submit">SIGN UP</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header">
+            <h1 class="TopHeader">BEST HEADLINE IN THE WORLD</h1>
+            <p class="TopPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In malesuada, elit eget facilisis molestie, 
+                nibh mauris tincidunt dolor, non placerat nunc sem eget nisl.
+                Proin eleifend dui nisi, a condimentum felis molestie vel. Aliquam erat volutpat. Aliquam ac venenatis ante.
+                Aliquam eget purus volutpat, luctus nisl ac, vehicula felis. Vivamus leo risus, sollicitudin sit amet consectetur sit amet, 
+                 Donec vitae elit in mauris scelerisque fringilla eu sit amet mi. Aliquam erat volutpat. </p>
+            <button class="TopButton">CTA BUTTON</button>
+        </div>
+        <div class="imageMid"></div>
+        <hr>
+        <h2 class="headf">Why use our platform?</h2>
+        <div class="features">
+            <nav class="navbar2">
+                <ul class="feature">
+                    <li class="listitem l1"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 01</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                    <li class="listitem l2"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 02</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                    <li class="listitem l3"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 03</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                    <li class="listitem l4"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 04</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                    <li class="listitem l5"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 05</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                    <li class="listitem l6"><i class="fa fa-envelope-open-o fa-4x" aria-hidden="true"></i><h4>Feature No. 06</h4>
+                        <p>It is really good feature.Lets talk about it.</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="midsection">
+            <div class="box"></div>
+            <div class="midheader"><h1>HOW IT WORKS</h1></div>
+            <div class="para"><p>Etiam at risus sit amet diam ultricies tincidunt eu placerat mi. Ut tincidunt mi ipsum, vitae pulvinar magna porttitor vel. Proin luctus venenatis lacus, vitae faucibus est gravida at. Proin eros risus, egestas vel quam nec, semper venenatis nunc. Nulla diam urna, tempor ut est ac, ullamcorper venenatis diam. Cras a convallis justo. Aenean leo ante, ultricies in varius ac, condimentum a risus. Nullam ut leo a tortor bibendum volutpat. Sed maximus laoreet quam, a sodales leo sagittis ut. Nulla posuere libero ac nisl consectetur consequat. Sed vulputate nisl luctus magna volutpat, vel porta diam dignissim. Ut purus odio, aliquet nec lacinia vel, vulputate in dolor. In vitae augue eros. Donec vitae mollis tortor, vitae rhoncus ipsum. Quisque vel malesuada nibh. Mauris mattis sem ut volutpat congue.
+            </p></div>
+            <br><br>
+            <button class="midbutton" type="submit">Learn more</button>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="review">
+            <h1 class="reviewhead">WHAT THEY SAY ABOUT US</h1>
+            <br>
+            <br>
+            <p class="reviewpara">Fusce cursus aliquam dui et imperdiet. Morbi id pellentesque tortor. 
+                Phasellus vel facilisis mi, rhoncus porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Vestibulum dignissim rutrum auctor. Sed faucibus neque ut euismod viverra. In et mi quis 
+                justo tincidunt rhoncus quis ut turpis. Cras vitae dui tincidunt, congue nibh sed, fringilla orci.
+                 Mauris commodo finibus cursus. Aliquam eros ante, auctor</p>
+            <br>
+            <br><hr><br><br>
+            <div class="johndoe name"><h3>JOHN DOE</h3></div>
+            <div class="johndoe ceo"><p>CEO OF GETDOUGH</p></div>
+            <br><br><br>
+            <div class="userreview">
+                <p><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></p>
+                <p><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></p>
+                <p><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></p>
+                <p><i class="fa fa-user-circle fa-3x" aria-hidden="true"></i></p>
+            </div>
+        </div>
+        <br><br><br><br>
+
+        <div class="contact">
+            <h3>GET IN TOUCH</h3><br>
+            <p>Learn more how to use our product and sign up to our newletter</p><br>
+            <form class="signup">
+                <input type="text" placeholder="Add your email">
+                <button type="submit">SUBSCRIBE</button>
+            </form>
+            <br><br>
+            <div class="logoswrapper">
+                <div class="logos">
+                    <div class="boxL b1"></div>
+                    <div class="boxL b2"></div>
+                    <div class="boxL b3"></div>
+                    <div class="boxL b4"></div>
+                    <div class="boxL b5"></div>
+                    <div class="boxL b6"></div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="bottomwrapper">
+            <ul class="headerul">
+                <li class="ListHeader"><h3 class="heading">PRODUCTS</h3><br>
+                <ul class="Internal">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </li>
+                <li class="ListHeader"><h3 class="heading">PARTNERS</h3><br>
+                <ul class="Internal">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </li>
+                <li class="ListHeader"><h3 class="heading">RESOURCES</h3><br>
+                <ul class="Internal">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </li>
+                <li class="ListHeader"><h3 class="heading">ABOUT</h3><br>
+                <ul class="Internal">
+                    <li>Link 1</li>
+                    <li>Link 2</li>
+                    <li>Link 3</li>
+                    <li>Link 4</li>
+                </ul>
+            </li>
+            </ul>
+        </div>
+    </body>
+</htm>
