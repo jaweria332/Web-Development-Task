@@ -47,9 +47,82 @@
                 text-decoration: none;
                 text-align: center;
             }
+            
             #navbar ul li a:hover{
                 background: linear-gradient(to bottom, rgb(1, 64, 80), rgb(1, 101, 126));
                 color: white;
+            }
+            label #btn, label #cancel {
+                color: black;
+                font-size: 30px;
+                float: right;
+                line-height: 80px;
+                margin-right: 40px;
+                cursor: pointer;
+                display: none;
+            }
+            #chk{
+                display: none;
+            }
+
+            @media (max-width: 1118px) {
+                #navbar .logo img{
+                    size:8%;
+                }
+            }
+
+            @media (max-width: 944px) {
+                #navbar .logo img{
+                    left: 6%;
+                    top: 20px;
+                    width: 130px;
+                }
+               
+                #navbar ul{
+                    float: right;
+                }
+            }
+
+            @media (max-width: 860px) {
+                label #btn{
+                    display: block;
+                }
+                #navbar ul{
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: rgb(1, 64, 80);
+                    top:80px;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                }
+
+                #navbar ul li{
+                    display: block;
+                    margin: 50px 0;
+                    line-height: 30px;
+                }
+                #navbar ul li a{
+                    font-size: 20px;
+                    color: white;
+                }
+                #chk:checked ~ ul{
+                    left:0;
+                }
+                .parent-wrapper{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    flex-flow: wrap;
+                }
+               .definition {
+                   height: 400px;
+                   overflow: scroll;
+               }
+       
             }
             .number {
                 padding: 10px;
@@ -60,9 +133,7 @@
                 margin-top: 30px;
                 float: left;
             }
-            .logo img{
-                float: left;
-            }
+           
             .bannerwrapper{
                 width:100%;
                 background: url('banner.png');
@@ -94,11 +165,15 @@
                 color: white;
                 margin: 10px;
                 background-color: orangered;
+                transition: transform 0.6s;
             }
             .bannerText .button1 {
                 background-color: rgb(2, 97, 134);
             }
-            
+            .bannerText .button1:hover, .bannerText .button2:hover{
+                transform: scale(1.2);
+                font-weight: bold;
+            }
             .values, .service, .mission {
                 width: 300px;
                 height: 350px;
@@ -162,24 +237,247 @@
                 justify-content: center;
                 flex-flow: wrap; 
             }
-            .missionwrapper{
-                position: absolute;
-                top:650px;
-            }
-            #parentMid {
-                position: relative;
-            }
+          
+            
             .values:hover, .service:hover, .mission:hover{
                 transform: scale(1.1);
             }
            .anaesthetist {
-               width: 300px;
-               height: 400px;
-               color: white;
-               background-color: cornflowerblue;
-               padding: 50px;
-               margin: 50px;
+               width: 90%;
+               color: rgb(255, 255, 255);
+               background-color: rgb(223, 223, 223);
+               padding: 20px;
+               margin-top: 10px;
+               margin-left:50px;
+               margin-right: 30px;
+               padding: 20px;
            }
+           .definition{
+               text-align: left;
+               margin: 20px;
+               background: url('b2-img.png');
+               background-repeat: no-repeat;
+               background-position: center;
+               background-size: cover;
+           }
+           .definition h2{
+                padding: 20px;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+                margin-right: 10px;
+                font-weight: bolder;
+                font-size: 30px;
+           }
+           .definition p{
+               margin-top: 20px;
+               margin-bottom: 10px;
+               margin-left: 30px;
+               padding-top: 20px;
+               padding-bottom: 10px;
+               line-height: 28px;
+               font-size: 18px;
+               width: 40%;
+           }
+           .staff{
+               width:100%;
+               text-align: center;
+           }
+           .staff hr{
+               margin-left: 45%;
+               margin-right: 45%;
+               margin-top: 20px;
+               margin-bottom: 20px;
+               background-color: red;
+               height: 5px;
+               border: solid red 1px;
+               border-radius: 3px;
+           }
+           .staff h3{
+               font-size: 28px;
+               font-weight: bold;
+               letter-spacing: 2px;
+               color: rgb(1, 64, 80);
+           }
+           #staffwrapper{
+               width: 90%;
+               margin:20px;
+               padding:20px;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: center;
+               flex-flow: wrap; 
+           }
+           #staffwrapper .member {
+               width: 225px;
+               margin:10px;
+               padding:10px;
+               text-align: center;
+           }
+           #staffwrapper .member img{
+               height: 150px;
+               width: 150px;
+               border: 3px solid rgb(196, 196, 196);
+               border-radius: 100px;
+               margin-top: 20px;
+           }
+           #staffwrapper .member h4{
+               color:rgb(1, 64, 80);
+               padding-top: 10px;
+               margin-top: 10px;
+               font-size: 18px;
+           }
+           #staffwrapper .member p{
+               font-size: 14px;
+               color: rgb(230, 73, 0);
+               padding-top:5px;
+           }
+           .test-wrapper {
+               width: 100%;
+               background-color: rgb(214, 212, 212);
+               margin-top: 10px;
+               padding-top: 20px;
+               padding-bottom: 30px;
+               text-align: center;
+           }
+           .comment-wrapper {
+               width: 95%;
+               margin-top:10px;
+               margin-left: 10px;
+               margin-right: 10px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               flex-flow: wrap; 
+           }
+           .comment-wrapper .comment {
+               width: 375px;
+               text-align: center;
+           }
+           .test-wrapper hr{
+               margin-left: 45%;
+               margin-right: 45%;
+               margin-top: 20px;
+               margin-bottom: 20px;
+               background-color: red;
+               height: 5px;
+               border: solid red 1px;
+               border-radius: 3px;
+           }
+           .test-wrapper h2{
+               padding-top: 50px;
+               margin-top: 10px;
+               font-size: 28px;
+               font-weight: bold;
+               letter-spacing: 2px;
+               color: rgb(1, 64, 80);
+           }.test-wrapper .comment-wrapper .comment p{
+               background: url('b4txbg.png');
+               padding: 50px 20px 50px 20px;
+               margin: 20px 20px 10px 20px;
+               background-repeat: no-repeat;
+               background-position: center;
+               background-size: cover;
+               font-size: 14px;
+               color:rgb(1, 101, 126);
+           }
+           .test-wrapper .comment img{
+                border: 3px solid rgb(196, 196, 196);
+                border-radius: 100px;
+                margin-top: 20px;
+           }
+           .test-wrapper .comment-wrapper .comment img{
+               float: left;
+           }
+           .test-wrapper .comment-wrapper .comment h3 {
+               padding-top: 20px;
+               padding-bottom:5px;
+               padding-left: 5px;
+               margin-top: 20px;
+               margin-left: 10px;
+               color: rgb(1, 64, 80);
+               float: left;
+           }
+        .logos-wrapper {
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(233, 233, 233);
+        }
+        .logos {
+            margin-right: 50px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+        }
+        .logos-wrapper .logos img {
+            padding: 10px;
+            margin-left: 10px;
+            margin-right: 10px;
+            filter:grayscale(100%);
+        }
+        .parent-wrapper{
+            width: 100%;
+            background-color: rgb(22, 31, 34);;
+            margin-bottom: 0;
+        }
+        .parent-wrapper .logo-social{
+            padding: 20px;
+            margin: 20px 20px 20px 50px;
+        }
+        .social img{
+            width: 50px;
+            height: 50px;
+            margin:5px;
+            filter: grayscale(100%);
+        }
+        .social{
+            padding: 20px 50px 20px 20px;
+            margin:20px;
+            float: right;
+        }
+        .footer {
+            width: 100%;
+            background-color: rgb(22, 31, 34);
+            color: white;
+            text-align: center;
+        }
+        .footer p{
+            padding: 15px;
+            margin-left: 10px;
+            margin-right: 10px;
+            font-size: 12px;
+        }
+        .parent-link{
+            background-color: rgb(1, 64, 80);
+            padding: 50px;
+            color: white;
+        }
+        .parent-link .link-wrapper{
+            padding: 20px;
+            margin:20px;
+        }
+  
+        .parent-link .link-wrapper .section h3{
+            padding:5px;
+            margin:10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .parent-link .link-wrapper .section ul li{
+            list-style: none;
+            padding:5px;
+        }
+        .link-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
         </style>
     </head>
     <body>
@@ -187,6 +485,11 @@
                 <div class="logo">
                     <img src="logo.png">
                 </div>
+                <input type="checkbox" id="chk">
+                <label for="chk">
+                    <i class="fa fa-bars" aria-hidden="true" id="btn"></i>
+                    <i class="fa fa-times" aria-hidden="true" id="cancel"></i>
+                </label>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT US</a></li>
@@ -237,8 +540,134 @@
             </div>
             <br><br><br>
         <div class="anaesthetist">
-            Hellow world
+            <div class="definition">
+                <h2>WHAT IS AN ANAESTHETIST?</h2>
+                <p>An anaesthetist is a specialist doctor, like the surgeon.
+                    who has completed a medical degree at university(for between 
+                    5-7 years). Search Results
+                    Featured snippet from the web
+                    Anaesthetists are specialist doctors who are responsible for providing 
+                    anaesthesia to patients for operations and procedures.
+                    In addition anaesthetists have a range of practice which extends beyond
+                    anaesthesia for surgery to include pain management and intensive care
+                </p>
+            </div>
         </div>
-            
+        <br> <br> <br> <br>
+        <div class="staff">
+            <h3>Meet our staff</h3>
+            <hr>
+            <br>
+        </div>
+        
+        <div id="staffwrapper">
+            <div class="member">
+                <img src="b3img1.png">
+                <h4>Larraine Johnston</h4>
+                <p>PRACTICE MANAGER/ADMINISTRATOR</p>
+            </div>
+
+            <div class="member">
+                <img src="b3img2.png">
+                <h4>Mary Knoblanche</h4>
+                <p>DATA MANAGER</p>
+            </div>
+
+            <div class="member">
+                <img src="b3img1.png">
+                <h4>Larraine Johnston</h4>
+                <p>PRACTICE MANAGER/ADMINISTRATOR</p>
+            </div>
+
+            <div class="member">
+                <img src="b3img2.png">
+                <h4>Mary Knoblanche</h4>
+                <p>DATA MANAGER</p>
+            </div>
+        </div>
+
+        <div class="test-wrapper">
+            <h2>Client Testonomial</h2>
+            <br><hr><br>
+            <div class="comment-wrapper">
+                <div class="comment c1">
+                    <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit 
+                         id sapien viverra ultricies vel at leo. Suspendisse auctor tortor eget 
+                          maximus tempor. Nunc faucibus magna sit amet augue consequat lacinia. 
+                          Mauris in congue ipsum. Nam aliquam tincidunt orci in aliquet. Sed eu 
+                          efficitur magna. </p>
+                    <img src="b4img.png">
+                    <h3>Claudia Vogi</h3>
+                </div>
+    
+                <div class="comment c2">
+                    <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit 
+                         id sapien viverra ultricies vel at leo. Suspendisse auctor tortor eget 
+                          maximus tempor. Nunc faucibus magna sit amet augue consequat lacinia. 
+                          Mauris in congue ipsum. Nam aliquam tincidunt orci in aliquet. Sed eu 
+                          efficitur magna. </p>
+                    <img src="b4img.png">
+                    <h3>Claudia Vogi</h3>
+             </div>
+    
+                <div class="comment c3">
+                    <p id="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit 
+                         id sapien viverra ultricies vel at leo. Suspendisse auctor tortor eget 
+                          maximus tempor. Nunc faucibus magna sit amet augue consequat lacinia. 
+                          Mauris in congue ipsum. Nam aliquam tincidunt orci in aliquet. Sed eu 
+                          efficitur magna.</p>
+                    <img src="b4img.png">
+                    <h3>Claudia Vogi</h3>
+                </div>
+            </div>
+        </div><div class="logos-wrapper">
+               <div class="logos">
+                <img src="smobj1.png">
+                <img src="smobj2.png">
+                <img src="smobj3.png">
+                <img src="smobj4.png">
+                <img src="smobj5.png">
+            </div>
+        </div> <div class="parent-wrapper">
+            <img class="logo-social" src="flogo.png">
+            <div class="social">
+                <img src="google.jpg">
+                <img src="ytube.png">
+                <img src="in.png">
+                <img src="tw.png">
+            </div>
+        </div> <div class="parent-link">
+            <div class="link-wrapper">
+                <div class="section s1">
+                    <h3>USEFUL LINKS</h3>
+                    <ul>
+                        <li><a="#">About us</a></li>
+                        <li><a="#">Who we are</a></li>
+                        <li><a="#">Patient info</a></li>
+                        <li><a="#">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="section s2">
+                    <ul>
+                        <li><a="#">Contact us</a></li>
+                        <li><a="#">Pivacy Policy</a></li>
+                        <li><a="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="section s3">
+                    <h3>CONTACT US</h3>
+                    <ul>
+                        <li><img src="clock.png"><a="#"> 9:00am tp 10:00pm</a></li>
+                        <li><img src="phone.png"><a="#"> 0900-78601</a></li>
+                        <li><img src="mail.png"><a="#"> www.freedesignstore.com</a></li>
+                        <li><img src="loc.png"><a="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non elit</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><div class="footer">
+            <p>&copy; 2018 freedesignstore.com - All Rights Reserved.</p>
+        </div>
     </body>
 </html>
